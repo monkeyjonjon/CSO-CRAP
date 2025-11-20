@@ -31,7 +31,7 @@ int candy(int *ratings, int n) {
 
     // add the total
     int total = 0;
-    for (int i = 0; i <= n; i++) {     /* bug 4: <= reads past end (out of bounds)*/
+    for (int i = 0; i < n; i++) {     /* bug 4: <= reads past end (out of bounds)*/
         total += candies[i];
     }
 
