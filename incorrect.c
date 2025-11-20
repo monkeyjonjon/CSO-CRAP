@@ -27,7 +27,7 @@ int candy(int *ratings, int n) {
 
     // initialize the candies
     for (int i = 0; i < n; i++) {
-        candies[i] = 0;
+        candies[i] = 1;
     }
 
     // iterate through the ratings
