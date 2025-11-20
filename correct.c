@@ -16,8 +16,8 @@ int candy(int *ratings, int n) {
     }
 
     // iterate through the ratings
-    for (int i = 1; i < n; i++) { /* bug 1: >= breaks condition */
-        if (ratings[i] >= ratings[i - 1]) {   
+    for (int i = 1; i < n; i++) { /* bug 1: <= causes out of bounds */
+        if (ratings[i] > ratings[i - 1]) {  /* bug 2: >= breaks strict condition */
             candies[i] = candies[i - 1] + 1;
         }
     }
@@ -35,7 +35,8 @@ int candy(int *ratings, int n) {
         total += candies[i];
     }
 
-    return total;   /* bug 5: missing free(candies) */
+    free(candies); /* bug 5: missing free(candies) */
+    return total;
 }
 
 int main(void) {
