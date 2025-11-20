@@ -5,6 +5,7 @@
 based on their score, following this logic: each child gets at least 1 candy, 
 if a child has a higher score than his immediate neighbor on the list, he gets more candy than his neighbor. 
 The goal is to distribute the minimal amount of candy.
+The input is [1, 0, 2] for ratings.
 The output should be the minimal amount of candy (2).
 */
 int max(int a, int b) {
