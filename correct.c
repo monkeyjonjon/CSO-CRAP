@@ -1,6 +1,11 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+/* This code distributes candy to children, 
+based on their score, following this logic: each child gets at least 1 candy, 
+if a child has a higher score than his immediate neighbor on the list, he gets more candy than his neighbor. 
+The goal is to distribute the minimal amount of candy. 
+*/
 int candy(int *ratings, int n) {
     int *candies = malloc(sizeof(int) * n);
 
