@@ -7,12 +7,19 @@ if a child has a higher score than his immediate neighbor on the list, he gets m
 The goal is to distribute the minimal amount of candy.
 The output should be the minimal amount of candy (2).
 */
+int max(int a, int b) {
+    if (a > b)
+        return a;
+    else
+        return b;
+}
+
 int candy(int *ratings, int n) {
     int *candies = malloc(sizeof(int) * n);
 
     // initialize the candies
     for (int i = 0; i < n; i++) {
-        candies[i] = 0;
+        candies[i] = 1;
     }
 
     // iterate through the ratings
