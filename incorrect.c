@@ -15,6 +15,12 @@ Explanation of errors: In this code you will find:
 logic errors will include an error with loop
 and an allocation error 
 */
+int max(int a, int b) {
+    if (a > b)
+        return a;
+    else
+        return b;
+}
 
 int candy(int *ratings, int n) {
     int *candies = malloc(sizeof(int) * n);
