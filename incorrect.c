@@ -9,9 +9,8 @@ The goal is to distribute the minimal amount of candy.
 The input is [1, 0, 2] for ratings.
 The output should be the minimal amount of candy (2).
 
-Explanation of errors: In this code you will find: 
-2 syntax errors 
-3 logic errors:
+Explanation of errors: In this code you will find:  
+5 logic errors:
 logic errors will include an error with loop
 and an allocation error 
 */
